@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#4C8DF7"/>
+      <stop offset="1" stop-color="#173B92"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="body"><rect x="100" y="100" width="824" height="824" rx="185"/></clipPath>
+    <clipPath id="card"><rect x="238" y="262" width="548" height="470" rx="52"/></clipPath>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+    <filter id="iconShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <!-- macOS icon body -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)" filter="url(#iconShadow)"/>
+  <g clip-path="url(#body)">
+    <rect x="100" y="100" width="824" height="420" fill="url(#gloss)"/>
+  </g>
+
+  <!-- table card -->
+  <g filter="url(#shadow)">
+    <rect x="238" y="262" width="548" height="470" rx="52" fill="#FFFFFF"/>
+  </g>
+  <g clip-path="url(#card)">
+    <!-- header -->
+    <rect x="238" y="262" width="548" height="104" fill="#E3ECFD"/>
+    <rect x="290" y="300" width="130" height="28" rx="14" fill="#7C98D6"/>
+    <rect x="560" y="300" width="170" height="28" rx="14" fill="#7C98D6"/>
+
+    <!-- row 1 -->
+    <circle cx="316" cy="436" r="24" fill="#3B82F6"/>
+    <rect x="364" y="424" width="150" height="24" rx="12" fill="#CBD5E1"/>
+    <rect x="560" y="410" width="170" height="52" rx="26" fill="#DCE4F0"/>
+
+    <!-- row 2: the highlighted attribute -->
+    <rect x="238" y="486" width="548" height="120" fill="#FFF4DB"/>
+    <circle cx="316" cy="546" r="24" fill="#22C55E"/>
+    <rect x="364" y="534" width="150" height="24" rx="12" fill="#B7791F" opacity="0.55"/>
+    <rect x="560" y="520" width="170" height="52" rx="26" fill="#F59E0B"/>
+    <circle cx="590" cy="546" r="9" fill="#FFFFFF"/>
+
+    <!-- row 3 -->
+    <circle cx="316" cy="666" r="24" fill="#3B82F6"/>
+    <rect x="364" y="654" width="150" height="24" rx="12" fill="#CBD5E1"/>
+    <rect x="560" y="640" width="170" height="52" rx="26" fill="#DCE4F0"/>
+
+    <!-- row separators -->
+    <rect x="238" y="485" width="548" height="2" fill="#E2E8F0"/>
+    <rect x="238" y="605" width="548" height="2" fill="#E2E8F0"/>
+  </g>
+</svg>

@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000000000000000000001 /* DeviceLookupForIntuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000001 /* DeviceLookupForIntuneApp.swift */; };
+		1A0000000000000000000002 /* SplashWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000002 /* SplashWindow.swift */; };
+		1A0000000000000000000003 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000003 /* SettingsStore.swift */; };
+		1A0000000000000000000004 /* AttributeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000004 /* AttributeRow.swift */; };
+		1A0000000000000000000005 /* DeviceSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000005 /* DeviceSecrets.swift */; };
+		1A0000000000000000000006 /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000006 /* DeviceStatus.swift */; };
+		1A0000000000000000000007 /* SecretRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000007 /* SecretRotation.swift */; };
+		1A0000000000000000000008 /* SearchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000008 /* SearchMode.swift */; };
+		1A0000000000000000000009 /* GraphClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000009 /* GraphClient.swift */; };
+		1A000000000000000000000A /* GraphDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000000A /* GraphDate.swift */; };
+		1A000000000000000000000B /* GraphError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000000B /* GraphError.swift */; };
+		1A000000000000000000000C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000000C /* Models.swift */; };
+		1A000000000000000000000D /* OSSourceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000000D /* OSSourceConfig.swift */; };
+		1A000000000000000000000E /* AppInstallReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000000E /* AppInstallReport.swift */; };
+		1A000000000000000000000F /* ReportReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000000F /* ReportReader.swift */; };
+		1A0000000000000000000010 /* CompliancePolicyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000010 /* CompliancePolicyReport.swift */; };
+		1A0000000000000000000011 /* DeviceInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000011 /* DeviceInventory.swift */; };
+		1A0000000000000000000012 /* GraphClientSkipPaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000012 /* GraphClientSkipPaging.swift */; };
+		1A0000000000000000000013 /* ReportTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000013 /* ReportTable.swift */; };
+		1A0000000000000000000014 /* RunStateFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000014 /* RunStateFields.swift */; };
+		1A0000000000000000000015 /* RunStateLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000015 /* RunStateLookup.swift */; };
+		1A0000000000000000000016 /* SearchResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000016 /* SearchResultRow.swift */; };
+		1A0000000000000000000017 /* StatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000017 /* StatusRow.swift */; };
+		1A0000000000000000000018 /* UPNQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000018 /* UPNQuery.swift */; };
+		1A0000000000000000000019 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000019 /* Account.swift */; };
+		1A000000000000000000001A /* AuthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000001A /* AuthConfiguration.swift */; };
+		1A000000000000000000001B /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000001B /* AuthError.swift */; };
+		1A000000000000000000001C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000001C /* AuthService.swift */; };
+		1A000000000000000000001D /* LoopbackServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000001D /* LoopbackServer.swift */; };
+		1A000000000000000000001E /* PKCE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000001E /* PKCE.swift */; };
+		1A000000000000000000001F /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000001F /* SessionStore.swift */; };
+		1A0000000000000000000020 /* TokenClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000020 /* TokenClient.swift */; };
+		1A0000000000000000000021 /* AttributeResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000021 /* AttributeResultsViewModel.swift */; };
+		1A0000000000000000000022 /* SecretsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000022 /* SecretsViewModel.swift */; };
+		1A0000000000000000000023 /* DeviceStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000023 /* DeviceStatusViewModel.swift */; };
+		1A0000000000000000000024 /* ScriptCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000024 /* ScriptCatalogViewModel.swift */; };
+		1A0000000000000000000025 /* DeviceSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000025 /* DeviceSearchViewModel.swift */; };
+		1A0000000000000000000026 /* ResultsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000026 /* ResultsCache.swift */; };
+		1A0000000000000000000027 /* ResultsWarmup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000027 /* ResultsWarmup.swift */; };
+		1A0000000000000000000028 /* RowSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000028 /* RowSort.swift */; };
+		1A0000000000000000000029 /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000029 /* CSVExporter.swift */; };
+		1A000000000000000000002A /* CSVSavePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000002A /* CSVSavePanel.swift */; };
+		1A000000000000000000002B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000002B /* AccountView.swift */; };
+		1A000000000000000000002C /* AttributeResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000002C /* AttributeResultsView.swift */; };
+		1A000000000000000000002D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000002D /* ContentView.swift */; };
+		1A000000000000000000002E /* JSONHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000002E /* JSONHighlighter.swift */; };
+		1A000000000000000000002F /* RowInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000002F /* RowInspectorView.swift */; };
+		1A0000000000000000000030 /* OSSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000030 /* OSSectionView.swift */; };
+		1A0000000000000000000031 /* SecretsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000031 /* SecretsPanelView.swift */; };
+		1A0000000000000000000032 /* DeviceStatusPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000032 /* DeviceStatusPanelView.swift */; };
+		1A0000000000000000000033 /* StatusResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000033 /* StatusResultsView.swift */; };
+		1A0000000000000000000034 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000034 /* SettingsView.swift */; };
+		1A0000000000000000000035 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000035 /* SidebarView.swift */; };
+		1A0000000000000000000036 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000036 /* SignInView.swift */; };
+		1A0000000000000000000037 /* DeviceSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000037 /* DeviceSearchView.swift */; };
+		1A0000000000000000000038 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000038 /* SplashView.swift */; };
+		1A0000000000000000000039 /* ValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000039 /* ValueCell.swift */; };
+		1A000000000000000000003A /* CopyMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000003A /* CopyMenu.swift */; };
+		1A000000000000000000003B /* AppInstallReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000003B /* AppInstallReportTests.swift */; };
+		1A000000000000000000003C /* AttributeResultsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000003C /* AttributeResultsViewModelTests.swift */; };
+		1A000000000000000000003D /* AttributeRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000003D /* AttributeRowTests.swift */; };
+		1A000000000000000000003E /* AuthConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000003E /* AuthConfigurationTests.swift */; };
+		1A000000000000000000003F /* AuthErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000003F /* AuthErrorTests.swift */; };
+		1A0000000000000000000040 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000040 /* AuthServiceTests.swift */; };
+		1A0000000000000000000041 /* CSVExporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000041 /* CSVExporterTests.swift */; };
+		1A0000000000000000000042 /* CompliancePolicyReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000042 /* CompliancePolicyReportTests.swift */; };
+		1A0000000000000000000043 /* CopyMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000043 /* CopyMenuTests.swift */; };
+		1A0000000000000000000044 /* DeviceSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000044 /* DeviceSearchViewModelTests.swift */; };
+		1A0000000000000000000045 /* DeviceSecretsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000045 /* DeviceSecretsLoaderTests.swift */; };
+		1A0000000000000000000046 /* DeviceStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000046 /* DeviceStatusTests.swift */; };
+		1A0000000000000000000047 /* GraphClientSkipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000047 /* GraphClientSkipTests.swift */; };
+		1A0000000000000000000048 /* GraphClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000048 /* GraphClientTests.swift */; };
+		1A0000000000000000000049 /* JSONHighlighterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000049 /* JSONHighlighterTests.swift */; };
+		1A000000000000000000004A /* LoopbackRequestParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000004A /* LoopbackRequestParserTests.swift */; };
+		1A000000000000000000004B /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000004B /* ModelsTests.swift */; };
+		1A000000000000000000004C /* OSSourceConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000004C /* OSSourceConfigTests.swift */; };
+		1A000000000000000000004D /* PKCETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000004D /* PKCETests.swift */; };
+		1A000000000000000000004E /* ResultsCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000004E /* ResultsCacheTests.swift */; };
+		1A000000000000000000004F /* RowSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000000000000000000004F /* RowSortTests.swift */; };
+		1A0000000000000000000050 /* RunStateLookupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000050 /* RunStateLookupTests.swift */; };
+		1A0000000000000000000051 /* ScriptCatalogViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000051 /* ScriptCatalogViewModelTests.swift */; };
+		1A0000000000000000000052 /* SearchModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000052 /* SearchModeTests.swift */; };
+		1A0000000000000000000053 /* SecretRotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000053 /* SecretRotationTests.swift */; };
+		1A0000000000000000000054 /* SecretsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000054 /* SecretsViewModelTests.swift */; };
+		1A0000000000000000000055 /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000055 /* SettingsStoreTests.swift */; };
+		1A0000000000000000000056 /* StatusRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000056 /* StatusRowTests.swift */; };
+		1A0000000000000000000057 /* TestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000057 /* TestSupport.swift */; };
+		1A0000000000000000000058 /* TokenClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000058 /* TokenClientTests.swift */; };
+		1A0000000000000000000059 /* UPNQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000059 /* UPNQueryTests.swift */; };
+		1A0000000000000000000387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0000000000000000000387 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A0000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A0000000000000000000001;
+			remoteInfo = DeviceLookupForIntune;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A0000000000000000000001 /* DeviceLookupForIntuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLookupForIntuneApp.swift; sourceTree = "<group>"; };
+		2A0000000000000000000002 /* SplashWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashWindow.swift; sourceTree = "<group>"; };
+		2A0000000000000000000003 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		2A0000000000000000000004 /* AttributeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeRow.swift; sourceTree = "<group>"; };
+		2A0000000000000000000005 /* DeviceSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSecrets.swift; sourceTree = "<group>"; };
+		2A0000000000000000000006 /* DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatus.swift; sourceTree = "<group>"; };
+		2A0000000000000000000007 /* SecretRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretRotation.swift; sourceTree = "<group>"; };
+		2A0000000000000000000008 /* SearchMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMode.swift; sourceTree = "<group>"; };
+		2A0000000000000000000009 /* GraphClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphClient.swift; sourceTree = "<group>"; };
+		2A000000000000000000000A /* GraphDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDate.swift; sourceTree = "<group>"; };
+		2A000000000000000000000B /* GraphError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphError.swift; sourceTree = "<group>"; };
+		2A000000000000000000000C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2A000000000000000000000D /* OSSourceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSourceConfig.swift; sourceTree = "<group>"; };
+		2A000000000000000000000E /* AppInstallReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallReport.swift; sourceTree = "<group>"; };
+		2A000000000000000000000F /* ReportReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportReader.swift; sourceTree = "<group>"; };
+		2A0000000000000000000010 /* CompliancePolicyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompliancePolicyReport.swift; sourceTree = "<group>"; };
+		2A0000000000000000000011 /* DeviceInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInventory.swift; sourceTree = "<group>"; };
+		2A0000000000000000000012 /* GraphClientSkipPaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphClientSkipPaging.swift; sourceTree = "<group>"; };
+		2A0000000000000000000013 /* ReportTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTable.swift; sourceTree = "<group>"; };
+		2A0000000000000000000014 /* RunStateFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStateFields.swift; sourceTree = "<group>"; };
+		2A0000000000000000000015 /* RunStateLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStateLookup.swift; sourceTree = "<group>"; };
+		2A0000000000000000000016 /* SearchResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRow.swift; sourceTree = "<group>"; };
+		2A0000000000000000000017 /* StatusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRow.swift; sourceTree = "<group>"; };
+		2A0000000000000000000018 /* UPNQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPNQuery.swift; sourceTree = "<group>"; };
+		2A0000000000000000000019 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		2A000000000000000000001A /* AuthConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfiguration.swift; sourceTree = "<group>"; };
+		2A000000000000000000001B /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		2A000000000000000000001C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2A000000000000000000001D /* LoopbackServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackServer.swift; sourceTree = "<group>"; };
+		2A000000000000000000001E /* PKCE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCE.swift; sourceTree = "<group>"; };
+		2A000000000000000000001F /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		2A0000000000000000000020 /* TokenClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenClient.swift; sourceTree = "<group>"; };
+		2A0000000000000000000021 /* AttributeResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeResultsViewModel.swift; sourceTree = "<group>"; };
+		2A0000000000000000000022 /* SecretsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsViewModel.swift; sourceTree = "<group>"; };
+		2A0000000000000000000023 /* DeviceStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusViewModel.swift; sourceTree = "<group>"; };
+		2A0000000000000000000024 /* ScriptCatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCatalogViewModel.swift; sourceTree = "<group>"; };
+		2A0000000000000000000025 /* DeviceSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSearchViewModel.swift; sourceTree = "<group>"; };
+		2A0000000000000000000026 /* ResultsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCache.swift; sourceTree = "<group>"; };
+		2A0000000000000000000027 /* ResultsWarmup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsWarmup.swift; sourceTree = "<group>"; };
+		2A0000000000000000000028 /* RowSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowSort.swift; sourceTree = "<group>"; };
+		2A0000000000000000000029 /* CSVExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
+		2A000000000000000000002A /* CSVSavePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVSavePanel.swift; sourceTree = "<group>"; };
+		2A000000000000000000002B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2A000000000000000000002C /* AttributeResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeResultsView.swift; sourceTree = "<group>"; };
+		2A000000000000000000002D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A000000000000000000002E /* JSONHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHighlighter.swift; sourceTree = "<group>"; };
+		2A000000000000000000002F /* RowInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowInspectorView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000030 /* OSSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSectionView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000031 /* SecretsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsPanelView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000032 /* DeviceStatusPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusPanelView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000033 /* StatusResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusResultsView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000034 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000035 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000036 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000037 /* DeviceSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSearchView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000038 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		2A0000000000000000000039 /* ValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueCell.swift; sourceTree = "<group>"; };
+		2A000000000000000000003A /* CopyMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyMenu.swift; sourceTree = "<group>"; };
+		2A000000000000000000003B /* AppInstallReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallReportTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000003C /* AttributeResultsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeResultsViewModelTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000003D /* AttributeRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeRowTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000003E /* AuthConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigurationTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000003F /* AuthErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000040 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000041 /* CSVExporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVExporterTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000042 /* CompliancePolicyReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompliancePolicyReportTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000043 /* CopyMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyMenuTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000044 /* DeviceSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSearchViewModelTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000045 /* DeviceSecretsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSecretsLoaderTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000046 /* DeviceStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000047 /* GraphClientSkipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphClientSkipTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000048 /* GraphClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphClientTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000049 /* JSONHighlighterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHighlighterTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000004A /* LoopbackRequestParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopbackRequestParserTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000004B /* ModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000004C /* OSSourceConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSourceConfigTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000004D /* PKCETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCETests.swift; sourceTree = "<group>"; };
+		2A000000000000000000004E /* ResultsCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCacheTests.swift; sourceTree = "<group>"; };
+		2A000000000000000000004F /* RowSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowSortTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000050 /* RunStateLookupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunStateLookupTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000051 /* ScriptCatalogViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCatalogViewModelTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000052 /* SearchModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModeTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000053 /* SecretRotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretRotationTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000054 /* SecretsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsViewModelTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000055 /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000056 /* StatusRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRowTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000057 /* TestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSupport.swift; sourceTree = "<group>"; };
+		2A0000000000000000000058 /* TokenClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenClientTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000059 /* UPNQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPNQueryTests.swift; sourceTree = "<group>"; };
+		2A0000000000000000000384 /* DeviceLookupForIntune.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceLookupForIntune.entitlements; sourceTree = "<group>"; };
+		2A0000000000000000000387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A0000000000000000000385 /* Device Lookup for Intune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Lookup for Intune.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0000000000000000000386 /* DeviceLookupForIntuneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceLookupForIntuneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A0000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A0000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A0000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				6A0000000000000000000002 /* App */,
+				6A0000000000000000000003 /* Settings */,
+				6A0000000000000000000004 /* Graph */,
+				6A0000000000000000000005 /* Auth */,
+				6A0000000000000000000006 /* ViewModels */,
+				6A0000000000000000000007 /* Export */,
+				6A0000000000000000000008 /* Views */,
+				6A0000000000000000000009 /* Tests */,
+				2A0000000000000000000384 /* DeviceLookupForIntune.entitlements */,
+				2A0000000000000000000387 /* Assets.xcassets */,
+				6A0000000000000000000063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000001 /* DeviceLookupForIntuneApp.swift */,
+				2A0000000000000000000002 /* SplashWindow.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000003 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000003 /* SettingsStore.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000004 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000004 /* AttributeRow.swift */,
+				2A0000000000000000000005 /* DeviceSecrets.swift */,
+				2A0000000000000000000006 /* DeviceStatus.swift */,
+				2A0000000000000000000007 /* SecretRotation.swift */,
+				2A0000000000000000000008 /* SearchMode.swift */,
+				2A0000000000000000000009 /* GraphClient.swift */,
+				2A000000000000000000000A /* GraphDate.swift */,
+				2A000000000000000000000B /* GraphError.swift */,
+				2A000000000000000000000C /* Models.swift */,
+				2A000000000000000000000D /* OSSourceConfig.swift */,
+				2A000000000000000000000E /* AppInstallReport.swift */,
+				2A000000000000000000000F /* ReportReader.swift */,
+				2A0000000000000000000010 /* CompliancePolicyReport.swift */,
+				2A0000000000000000000011 /* DeviceInventory.swift */,
+				2A0000000000000000000012 /* GraphClientSkipPaging.swift */,
+				2A0000000000000000000013 /* ReportTable.swift */,
+				2A0000000000000000000014 /* RunStateFields.swift */,
+				2A0000000000000000000015 /* RunStateLookup.swift */,
+				2A0000000000000000000016 /* SearchResultRow.swift */,
+				2A0000000000000000000017 /* StatusRow.swift */,
+				2A0000000000000000000018 /* UPNQuery.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000005 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000019 /* Account.swift */,
+				2A000000000000000000001A /* AuthConfiguration.swift */,
+				2A000000000000000000001B /* AuthError.swift */,
+				2A000000000000000000001C /* AuthService.swift */,
+				2A000000000000000000001D /* LoopbackServer.swift */,
+				2A000000000000000000001E /* PKCE.swift */,
+				2A000000000000000000001F /* SessionStore.swift */,
+				2A0000000000000000000020 /* TokenClient.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000021 /* AttributeResultsViewModel.swift */,
+				2A0000000000000000000022 /* SecretsViewModel.swift */,
+				2A0000000000000000000023 /* DeviceStatusViewModel.swift */,
+				2A0000000000000000000024 /* ScriptCatalogViewModel.swift */,
+				2A0000000000000000000025 /* DeviceSearchViewModel.swift */,
+				2A0000000000000000000026 /* ResultsCache.swift */,
+				2A0000000000000000000027 /* ResultsWarmup.swift */,
+				2A0000000000000000000028 /* RowSort.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000007 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000029 /* CSVExporter.swift */,
+				2A000000000000000000002A /* CSVSavePanel.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000008 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A000000000000000000002B /* AccountView.swift */,
+				2A000000000000000000002C /* AttributeResultsView.swift */,
+				2A000000000000000000002D /* ContentView.swift */,
+				2A000000000000000000002E /* JSONHighlighter.swift */,
+				2A000000000000000000002F /* RowInspectorView.swift */,
+				2A0000000000000000000030 /* OSSectionView.swift */,
+				2A0000000000000000000031 /* SecretsPanelView.swift */,
+				2A0000000000000000000032 /* DeviceStatusPanelView.swift */,
+				2A0000000000000000000033 /* StatusResultsView.swift */,
+				2A0000000000000000000034 /* SettingsView.swift */,
+				2A0000000000000000000035 /* SidebarView.swift */,
+				2A0000000000000000000036 /* SignInView.swift */,
+				2A0000000000000000000037 /* DeviceSearchView.swift */,
+				2A0000000000000000000038 /* SplashView.swift */,
+				2A0000000000000000000039 /* ValueCell.swift */,
+				2A000000000000000000003A /* CopyMenu.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000009 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2A000000000000000000003B /* AppInstallReportTests.swift */,
+				2A000000000000000000003C /* AttributeResultsViewModelTests.swift */,
+				2A000000000000000000003D /* AttributeRowTests.swift */,
+				2A000000000000000000003E /* AuthConfigurationTests.swift */,
+				2A000000000000000000003F /* AuthErrorTests.swift */,
+				2A0000000000000000000040 /* AuthServiceTests.swift */,
+				2A0000000000000000000041 /* CSVExporterTests.swift */,
+				2A0000000000000000000042 /* CompliancePolicyReportTests.swift */,
+				2A0000000000000000000043 /* CopyMenuTests.swift */,
+				2A0000000000000000000044 /* DeviceSearchViewModelTests.swift */,
+				2A0000000000000000000045 /* DeviceSecretsLoaderTests.swift */,
+				2A0000000000000000000046 /* DeviceStatusTests.swift */,
+				2A0000000000000000000047 /* GraphClientSkipTests.swift */,
+				2A0000000000000000000048 /* GraphClientTests.swift */,
+				2A0000000000000000000049 /* JSONHighlighterTests.swift */,
+				2A000000000000000000004A /* LoopbackRequestParserTests.swift */,
+				2A000000000000000000004B /* ModelsTests.swift */,
+				2A000000000000000000004C /* OSSourceConfigTests.swift */,
+				2A000000000000000000004D /* PKCETests.swift */,
+				2A000000000000000000004E /* ResultsCacheTests.swift */,
+				2A000000000000000000004F /* RowSortTests.swift */,
+				2A0000000000000000000050 /* RunStateLookupTests.swift */,
+				2A0000000000000000000051 /* ScriptCatalogViewModelTests.swift */,
+				2A0000000000000000000052 /* SearchModeTests.swift */,
+				2A0000000000000000000053 /* SecretRotationTests.swift */,
+				2A0000000000000000000054 /* SecretsViewModelTests.swift */,
+				2A0000000000000000000055 /* SettingsStoreTests.swift */,
+				2A0000000000000000000056 /* StatusRowTests.swift */,
+				2A0000000000000000000057 /* TestSupport.swift */,
+				2A0000000000000000000058 /* TokenClientTests.swift */,
+				2A0000000000000000000059 /* UPNQueryTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6A0000000000000000000063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A0000000000000000000385 /* Device Lookup for Intune.app */,
+				2A0000000000000000000386 /* DeviceLookupForIntuneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A0000000000000000000001 /* DeviceLookupForIntune */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000002 /* Build configuration list for PBXNativeTarget "DeviceLookupForIntune" */;
+			buildPhases = (
+				8A0000000000000000000001 /* Sources */,
+				4A0000000000000000000001 /* Frameworks */,
+				EA0000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceLookupForIntune;
+			productName = DeviceLookupForIntune;
+			productReference = 2A0000000000000000000385 /* Device Lookup for Intune.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A0000000000000000000002 /* DeviceLookupForIntuneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000003 /* Build configuration list for PBXNativeTarget "DeviceLookupForIntuneTests" */;
+			buildPhases = (
+				8A0000000000000000000002 /* Sources */,
+				4A0000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA0000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = DeviceLookupForIntuneTests;
+			productName = DeviceLookupForIntuneTests;
+			productReference = 2A0000000000000000000386 /* DeviceLookupForIntuneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = AA0000000000000000000001 /* Build configuration list for PBXProject "DeviceLookupForIntune" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A0000000000000000000001;
+			productRefGroup = 6A0000000000000000000063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A0000000000000000000001 /* DeviceLookupForIntune */,
+				5A0000000000000000000002 /* DeviceLookupForIntuneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000000000000000000387 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000000000000000000001 /* DeviceLookupForIntuneApp.swift in Sources */,
+				1A0000000000000000000002 /* SplashWindow.swift in Sources */,
+				1A0000000000000000000003 /* SettingsStore.swift in Sources */,
+				1A0000000000000000000004 /* AttributeRow.swift in Sources */,
+				1A0000000000000000000005 /* DeviceSecrets.swift in Sources */,
+				1A0000000000000000000006 /* DeviceStatus.swift in Sources */,
+				1A0000000000000000000007 /* SecretRotation.swift in Sources */,
+				1A0000000000000000000008 /* SearchMode.swift in Sources */,
+				1A0000000000000000000009 /* GraphClient.swift in Sources */,
+				1A000000000000000000000A /* GraphDate.swift in Sources */,
+				1A000000000000000000000B /* GraphError.swift in Sources */,
+				1A000000000000000000000C /* Models.swift in Sources */,
+				1A000000000000000000000D /* OSSourceConfig.swift in Sources */,
+				1A000000000000000000000E /* AppInstallReport.swift in Sources */,
+				1A000000000000000000000F /* ReportReader.swift in Sources */,
+				1A0000000000000000000010 /* CompliancePolicyReport.swift in Sources */,
+				1A0000000000000000000011 /* DeviceInventory.swift in Sources */,
+				1A0000000000000000000012 /* GraphClientSkipPaging.swift in Sources */,
+				1A0000000000000000000013 /* ReportTable.swift in Sources */,
+				1A0000000000000000000014 /* RunStateFields.swift in Sources */,
+				1A0000000000000000000015 /* RunStateLookup.swift in Sources */,
+				1A0000000000000000000016 /* SearchResultRow.swift in Sources */,
+				1A0000000000000000000017 /* StatusRow.swift in Sources */,
+				1A0000000000000000000018 /* UPNQuery.swift in Sources */,
+				1A0000000000000000000019 /* Account.swift in Sources */,
+				1A000000000000000000001A /* AuthConfiguration.swift in Sources */,
+				1A000000000000000000001B /* AuthError.swift in Sources */,
+				1A000000000000000000001C /* AuthService.swift in Sources */,
+				1A000000000000000000001D /* LoopbackServer.swift in Sources */,
+				1A000000000000000000001E /* PKCE.swift in Sources */,
+				1A000000000000000000001F /* SessionStore.swift in Sources */,
+				1A0000000000000000000020 /* TokenClient.swift in Sources */,
+				1A0000000000000000000021 /* AttributeResultsViewModel.swift in Sources */,
+				1A0000000000000000000022 /* SecretsViewModel.swift in Sources */,
+				1A0000000000000000000023 /* DeviceStatusViewModel.swift in Sources */,
+				1A0000000000000000000024 /* ScriptCatalogViewModel.swift in Sources */,
+				1A0000000000000000000025 /* DeviceSearchViewModel.swift in Sources */,
+				1A0000000000000000000026 /* ResultsCache.swift in Sources */,
+				1A0000000000000000000027 /* ResultsWarmup.swift in Sources */,
+				1A0000000000000000000028 /* RowSort.swift in Sources */,
+				1A0000000000000000000029 /* CSVExporter.swift in Sources */,
+				1A000000000000000000002A /* CSVSavePanel.swift in Sources */,
+				1A000000000000000000002B /* AccountView.swift in Sources */,
+				1A000000000000000000002C /* AttributeResultsView.swift in Sources */,
+				1A000000000000000000002D /* ContentView.swift in Sources */,
+				1A000000000000000000002E /* JSONHighlighter.swift in Sources */,
+				1A000000000000000000002F /* RowInspectorView.swift in Sources */,
+				1A0000000000000000000030 /* OSSectionView.swift in Sources */,
+				1A0000000000000000000031 /* SecretsPanelView.swift in Sources */,
+				1A0000000000000000000032 /* DeviceStatusPanelView.swift in Sources */,
+				1A0000000000000000000033 /* StatusResultsView.swift in Sources */,
+				1A0000000000000000000034 /* SettingsView.swift in Sources */,
+				1A0000000000000000000035 /* SidebarView.swift in Sources */,
+				1A0000000000000000000036 /* SignInView.swift in Sources */,
+				1A0000000000000000000037 /* DeviceSearchView.swift in Sources */,
+				1A0000000000000000000038 /* SplashView.swift in Sources */,
+				1A0000000000000000000039 /* ValueCell.swift in Sources */,
+				1A000000000000000000003A /* CopyMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A000000000000000000003B /* AppInstallReportTests.swift in Sources */,
+				1A000000000000000000003C /* AttributeResultsViewModelTests.swift in Sources */,
+				1A000000000000000000003D /* AttributeRowTests.swift in Sources */,
+				1A000000000000000000003E /* AuthConfigurationTests.swift in Sources */,
+				1A000000000000000000003F /* AuthErrorTests.swift in Sources */,
+				1A0000000000000000000040 /* AuthServiceTests.swift in Sources */,
+				1A0000000000000000000041 /* CSVExporterTests.swift in Sources */,
+				1A0000000000000000000042 /* CompliancePolicyReportTests.swift in Sources */,
+				1A0000000000000000000043 /* CopyMenuTests.swift in Sources */,
+				1A0000000000000000000044 /* DeviceSearchViewModelTests.swift in Sources */,
+				1A0000000000000000000045 /* DeviceSecretsLoaderTests.swift in Sources */,
+				1A0000000000000000000046 /* DeviceStatusTests.swift in Sources */,
+				1A0000000000000000000047 /* GraphClientSkipTests.swift in Sources */,
+				1A0000000000000000000048 /* GraphClientTests.swift in Sources */,
+				1A0000000000000000000049 /* JSONHighlighterTests.swift in Sources */,
+				1A000000000000000000004A /* LoopbackRequestParserTests.swift in Sources */,
+				1A000000000000000000004B /* ModelsTests.swift in Sources */,
+				1A000000000000000000004C /* OSSourceConfigTests.swift in Sources */,
+				1A000000000000000000004D /* PKCETests.swift in Sources */,
+				1A000000000000000000004E /* ResultsCacheTests.swift in Sources */,
+				1A000000000000000000004F /* RowSortTests.swift in Sources */,
+				1A0000000000000000000050 /* RunStateLookupTests.swift in Sources */,
+				1A0000000000000000000051 /* ScriptCatalogViewModelTests.swift in Sources */,
+				1A0000000000000000000052 /* SearchModeTests.swift in Sources */,
+				1A0000000000000000000053 /* SecretRotationTests.swift in Sources */,
+				1A0000000000000000000054 /* SecretsViewModelTests.swift in Sources */,
+				1A0000000000000000000055 /* SettingsStoreTests.swift in Sources */,
+				1A0000000000000000000056 /* StatusRowTests.swift in Sources */,
+				1A0000000000000000000057 /* TestSupport.swift in Sources */,
+				1A0000000000000000000058 /* TokenClientTests.swift in Sources */,
+				1A0000000000000000000059 /* UPNQueryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA0000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A0000000000000000000001 /* DeviceLookupForIntune */;
+			targetProxy = 3A0000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DA0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DeviceLookupForIntune.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDDEN_SYMBOLS = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Lookup for Intune";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceLookupForIntune;
+				PRODUCT_MODULE_NAME = DeviceLookupForIntune;
+				PRODUCT_NAME = "Device Lookup for Intune";
+			};
+			name = Debug;
+		};
+		DA0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DeviceLookupForIntune.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDDEN_SYMBOLS = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Device Lookup for Intune";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceLookupForIntune;
+				PRODUCT_MODULE_NAME = DeviceLookupForIntune;
+				PRODUCT_NAME = "Device Lookup for Intune";
+			};
+			name = Release;
+		};
+		DA0000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceLookupForIntuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Device Lookup for Intune.app/Contents/MacOS/Device Lookup for Intune";
+			};
+			name = Debug;
+		};
+		DA0000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceLookupForIntuneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Device Lookup for Intune.app/Contents/MacOS/Device Lookup for Intune";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000001 /* Build configuration list for PBXProject "DeviceLookupForIntune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0000000000000000000001 /* Debug */,
+				DA0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000002 /* Build configuration list for PBXNativeTarget "DeviceLookupForIntune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0000000000000000000003 /* Debug */,
+				DA0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000003 /* Build configuration list for PBXNativeTarget "DeviceLookupForIntuneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0000000000000000000005 /* Debug */,
+				DA0000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A0000000000000000000001 /* Project object */;
+}
